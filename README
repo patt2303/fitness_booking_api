@@ -1,0 +1,36 @@
+PROJECT STRUCTURE
+fitness_booking_api/
+main.py              # Core FastAPI app & route handlers
+models.py            # Data models using Pydantic
+utils.py             # Utility functions (timezone handling, file I/O)
+data/
+ classes.json     # Sample seed data: yoga, zumba, hiit
+ bookings.json    # Stores all bookings
+requirements.txt     # Dependencies for setup
+README.md            # Setup instructions and API usage
+
+1. main.py — Main FastAPI Application
+Handles all API endpoints.
+@app.get
+Lists all upcoming classes
+Converts time to user's requested timezone
+
+@app.post
+Accepts booking data: class_id, client_name, client_email
+Validates input
+Checks available slots and prevents overbooking
+Saves booking to file
+
+@app.get
+Returns all bookings for the given email address
+
+2. models.py — Pydantic Models for Validation
+FitnessClass
+Represents a class (Yoga, Zumba, etc.)
+
+BookingRequest
+Used in POST /book
+Validates email using EmailStr
+
+Booking
+Full booking record, used in file storage

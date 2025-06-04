@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "name": "Yoga",
+      "date_time": "2025-06-06T07:00:00",
+      "instructor": "Asha",
+      "available_slots": 5
+    },
+    {
+      "id": 2,
+      "name": "Zumba",
+      "date_time": "2025-06-06T09:00:00",
+      "instructor": "Rahul",
+      "available_slots": 3
+    }
+  ]
+  
