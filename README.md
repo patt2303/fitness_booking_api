@@ -1,10 +1,10 @@
-# 🏋️‍♂️ Fitness Studio Booking API
+#  Fitness Studio Booking API
 
 A simple FastAPI-based backend for managing bookings in a fictional fitness studio. Clients can view classes and book available slots.
 
----
 
-## 🚀 Features
+
+## Features
 
 - View all upcoming classes with timezone conversion
 - Book a class with email validation
@@ -12,9 +12,9 @@ A simple FastAPI-based backend for managing bookings in a fictional fitness stud
 - Stores data in flat JSON files (no database)
 - Built with FastAPI and Pydantic
 
----
 
-## 📁 Project Structure
+
+## Project Structure
 
 fitness_booking_api/
 ├── main.py # FastAPI endpoints
@@ -27,9 +27,9 @@ fitness_booking_api/
 └── README.md # This file
 
 
----
 
-## 🛠️ Setup Instructions
+
+## Setup Instructions
 
 ### 1. Clone the Repo
 
